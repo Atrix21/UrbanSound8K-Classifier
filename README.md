@@ -15,7 +15,7 @@ The following libraries are required to run the project:
   
 # CNN Model
 
-The CNN model is built using TensorFlow 2.x and trained on a dataset of 8732 audio files that belong to 10 different classes of urban sounds. The model architecture consists of 4 convolutional layers, 2 pooling layers, and 2 fully connected layers. The input layer of the model takes a tensor of shape (batch_size, 40, 174, 1) where batch_size is the number of training examples in each batch. The output layer is a softmax layer that returns the predicted class probabilities. The model is trained for 30 epochs using a batch size of 64 and achieves an accuracy of 86.7% on the test set.
+The CNN model is built using TensorFlow 2.x and trained on a dataset of 8732 audio files that belong to 10 different classes of urban sounds. The model architecture consists of 4 convolutional layers, 2 pooling layers, and 2 fully connected layers. The input layer of the model takes a tensor of shape (batch_size, 40, 174, 1) where batch_size is the number of training examples in each batch. The output layer is a softmax layer that returns the predicted class probabilities. The model is trained for 30 epochs using a batch size of 64 and achieves an accuracy of 93.9% on the test set.
 
 # Flask API
 
@@ -29,19 +29,11 @@ The Flutter mobile application allows users to upload audio files and receive th
 
 To use the project, follow these steps:
 
-Clone the repository using git clone https://github.com/Atrix21/login_phoneno.git
-
-
-Install the required libraries using pip install -r requirements.txt for the Flask API and flutter packages get for the Flutter app.
-
-
-Train the CNN model using python train.py 
-
-
-Deploy the Flask API using python app.py 
-
-
-Run the Flutter app using flutter run on an emulator or physical device. 
+- Clone the repository using git clone https://github.com/Atrix21/login_phoneno.git
+- Install the required libraries using pip install -r requirements.txt for the Flask API and flutter packages get for the Flutter app.
+- Train the CNN model using python train.py 
+- Deploy the Flask API using python app.py 
+- Run the Flutter app using flutter run on an emulator or physical device. 
 
 
 # Conclusion
