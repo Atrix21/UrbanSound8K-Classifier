@@ -30,7 +30,8 @@ The Flutter mobile application allows users to upload audio files and receive th
 To use the project, follow these steps:
 
 - Clone the repository using git clone https://github.com/Atrix21/login_phoneno.git
-- Install the required libraries using pip install -r requirements.txt for the Flask API and flutter packages get for the Flutter app.
+- Install the required libraries using pip install -r requirements.txt for the Flask API.
+- Install the flutter packages from the pubspec.yaml file availbale in the Flutter App folder of the repo.
 - Train the CNN model using the code available in CNN1_US8K.ipynb file.
 - Deploy the Flask API using python app.py 
 - Run the Flutter app using flutter run on an emulator or physical device. 
