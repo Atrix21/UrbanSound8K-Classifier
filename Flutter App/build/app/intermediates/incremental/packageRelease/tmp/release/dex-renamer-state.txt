@@ -1,0 +1,4 @@
+#Wed Apr 19 11:10:38 IST 2023
+base.0=/Users/atrix/StudioProjects/login_phoneno/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

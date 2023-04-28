@@ -1,0 +1,13 @@
+com.mr.flutter.plugin.filepicker.file_picker-jetified-window-1.0.0-beta04-0 /Users/atrix/.gradle/caches/transforms-3/2ffb0360d83bab6ed7665e63bcb66d04/transformed/jetified-window-1.0.0-beta04/res
+com.mr.flutter.plugin.filepicker.file_picker-core-1.6.0-1 /Users/atrix/.gradle/caches/transforms-3/834a4435b41144e2f8076acb9024a891/transformed/core-1.6.0/res
+com.mr.flutter.plugin.filepicker.file_picker-jetified-window-java-1.0.0-beta04-2 /Users/atrix/.gradle/caches/transforms-3/f15106001e82d13e80f3f4d08e01b942/transformed/jetified-window-java-1.0.0-beta04/res
+com.mr.flutter.plugin.filepicker.file_picker-jetified-annotation-experimental-1.1.0-3 /Users/atrix/.gradle/caches/transforms-3/ff39cc8b3372854ff19d5cd85cfad767/transformed/jetified-annotation-experimental-1.1.0/res
+com.mr.flutter.plugin.filepicker.file_picker-main-4 /Users/atrix/.pub-cache/hosted/pub.dev/file_picker-5.2.9/android/src/main/res
+com.mr.flutter.plugin.filepicker.file_picker-release-5 /Users/atrix/.pub-cache/hosted/pub.dev/file_picker-5.2.9/android/src/release/res
+com.mr.flutter.plugin.filepicker.file_picker-pngs-6 /Users/atrix/StudioProjects/login_phoneno/build/file_picker/generated/res/pngs/release
+com.mr.flutter.plugin.filepicker.file_picker-resValues-7 /Users/atrix/StudioProjects/login_phoneno/build/file_picker/generated/res/resValues/release
+com.mr.flutter.plugin.filepicker.file_picker-rs-8 /Users/atrix/StudioProjects/login_phoneno/build/file_picker/generated/res/rs/release
+com.mr.flutter.plugin.filepicker.file_picker-mergeReleaseResources-9 /Users/atrix/StudioProjects/login_phoneno/build/file_picker/intermediates/incremental/release/mergeReleaseResources/merged.dir
+com.mr.flutter.plugin.filepicker.file_picker-mergeReleaseResources-10 /Users/atrix/StudioProjects/login_phoneno/build/file_picker/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+com.mr.flutter.plugin.filepicker.file_picker-merged_res-11 /Users/atrix/StudioProjects/login_phoneno/build/file_picker/intermediates/merged_res/release
+com.mr.flutter.plugin.filepicker.file_picker-packaged_res-12 /Users/atrix/StudioProjects/login_phoneno/build/flutter_plugin_android_lifecycle/intermediates/packaged_res/release
