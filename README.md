@@ -7,12 +7,19 @@ This repository contains the code for a project that classifies audio files into
 The following libraries are required to run the project:
 
 TensorFlow 2.x
+
 librosa
+
 Flask
+
 numpy
+
 pandas
+
 scikit-learn
+
 Flutter SDK
+
 CNN Model
 
 The CNN model is built using TensorFlow 2.x and trained on a dataset of 8732 audio files that belong to 10 different classes of urban sounds. The model architecture consists of 4 convolutional layers, 2 pooling layers, and 2 fully connected layers. The input layer of the model takes a tensor of shape (batch_size, 40, 174, 1) where batch_size is the number of training examples in each batch. The output layer is a softmax layer that returns the predicted class probabilities. The model is trained for 30 epochs using a batch size of 64 and achieves an accuracy of 86.7% on the test set.
