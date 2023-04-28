@@ -31,7 +31,7 @@ To use the project, follow these steps:
 
 - Clone the repository using git clone https://github.com/Atrix21/login_phoneno.git
 - Install the required libraries using pip install -r requirements.txt for the Flask API and flutter packages get for the Flutter app.
-- Train the CNN model using python train.py 
+- Train the CNN model using the code available in CNN1_US8K.ipynb file.
 - Deploy the Flask API using python app.py 
 - Run the Flutter app using flutter run on an emulator or physical device. 
 
@@ -39,3 +39,7 @@ To use the project, follow these steps:
 # Conclusion
 
 The Urban Sound Classification project demonstrates the use of machine learning techniques to classify audio files into different types of urban sounds. The project consists of a CNN model trained on a dataset of urban sounds, a Flask API to deploy the trained model, and a Flutter mobile application that allows users to upload audio files and receive the predicted class probabilities.
+
+# Acknowledgements
+- The UrbanSound8K dataset was obtained from the following source: https://urbansounddataset.weebly.com/urbansound8k.html
+- The code for building the CNN model was adapted from the following kaggle notebook: https://www.kaggle.com/code/emrekayah/notebook-cnn 
