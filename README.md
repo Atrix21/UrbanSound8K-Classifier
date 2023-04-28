@@ -21,6 +21,16 @@ The CNN model is built using TensorFlow 2.x and trained on a dataset of 8732 aud
 
 The Flask API is used to deploy the trained CNN model and provide a way for the Flutter app to make predictions on new audio files. The API exposes a single route /predict that accepts audio files in WAV format and returns the predicted class probabilities. The API is built using Flask and is hosted on an AWS EC2 instance.
 
+# Hosting the Flask App on AWS EC2
+
+To host the Flask app on an AWS EC2 instance, follow these steps:
+- Launch an EC2 instance on AWS and configure it with a public IP address.
+- Connect to the instance using SSH.
+- Install the required libraries using pip install -r requirements.txt.
+- Copy the code for the Flask app (app.py) to the instance.
+- Import the model into your SSH instance.
+- follow the steps from the the youtube playlist https://www.youtube.com/playlist?list=PL5KTLzN85O4KTCYzsWZPTP0BfRj6I_yUP videos 3-5.
+
 # Flutter Mobile Application
 
 The Flutter mobile application allows users to upload audio files and receive the predicted class probabilities from the deployed CNN model. The app is built using Flutter SDK and has a simple user interface that consists of two screens: a login screen and a home screen. The login screen allows users to log in using their phone number and a one-time password sent via SMS. The home screen allows users to upload audio files and receive the predicted class probabilities. The app communicates with the Flask API to make predictions on new audio files.
@@ -44,3 +54,4 @@ The Urban Sound Classification project demonstrates the use of machine learning 
 # Acknowledgements
 - The UrbanSound8K dataset was obtained from the following source: https://urbansounddataset.weebly.com/urbansound8k.html
 - The code for building the CNN model was adapted from the following kaggle notebook: https://www.kaggle.com/code/emrekayah/notebook-cnn 
+- The process of creating an EC2 instance and configuring for flask : https://www.youtube.com/playlist?list=PL5KTLzN85O4KTCYzsWZPTP0BfRj6I_yUP
