@@ -5,13 +5,13 @@ This repository contains the code for a project that classifies audio files into
 # Requirements
 
 The following libraries are required to run the project:
-- TensorFlow 2.x \n
-- librosa \n
-- Flask \n
-- numpy \n
-- pandas \n
-- scikit-learn \n
-- Flutter SDK \n
+- TensorFlow 2.x 
+- librosa 
+- Flask 
+- numpy 
+- pandas 
+- scikit-learn 
+- Flutter SDK 
   
 # CNN Model
 
@@ -29,11 +29,21 @@ The Flutter mobile application allows users to upload audio files and receive th
 
 To use the project, follow these steps:
 
-Clone the repository using git clone https://github.com/Atrix21/login_phoneno.git \n
-Install the required libraries using pip install -r requirements.txt for the Flask API and flutter packages get for the Flutter app.\n
-Train the CNN model using python train.py \n
-Deploy the Flask API using python app.py \n
-Run the Flutter app using flutter run on an emulator or physical device. \n
+Clone the repository using git clone https://github.com/Atrix21/login_phoneno.git
+
+
+Install the required libraries using pip install -r requirements.txt for the Flask API and flutter packages get for the Flutter app.
+
+
+Train the CNN model using python train.py 
+
+
+Deploy the Flask API using python app.py 
+
+
+Run the Flutter app using flutter run on an emulator or physical device. 
+
+
 # Conclusion
 
 The Urban Sound Classification project demonstrates the use of machine learning techniques to classify audio files into different types of urban sounds. The project consists of a CNN model trained on a dataset of urban sounds, a Flask API to deploy the trained model, and a Flutter mobile application that allows users to upload audio files and receive the predicted class probabilities.
