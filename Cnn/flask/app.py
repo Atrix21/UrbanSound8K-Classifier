@@ -11,11 +11,10 @@ d = {0: 'air_conditioner', 1: 'car_horn', 2: 'children_playing', 3: 'dog_bark', 
 
 def func(filename):
     max_pad_len = 215
-    audio, sample_rate = librosa.load(file_name) 
+    audio, sample_rate = librosa.load(filename) 
     mfccs = librosa.feature.mfcc(y=audio, sr=sample_rate, n_mfcc=40)
     pad_width = max_pad_len - mfccs.shape[1]
     feat = np.pad(mfccs, pad_width=((0, 0), (0, pad_width)), mode='constant')
-    feat = extract_features(filename)
     feat = feat.reshape(40, 1, 1)
     batch_size=1 # example batch size
     feat = np.reshape(feat, (batch_size,) + feat.shape)
