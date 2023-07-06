@@ -5,21 +5,17 @@ import numpy as np
 
 app = Flask(__name__)
 
-model = tf.keras.models.load_model('weights.best.basic_cnn.hdf5')
+model = tf.keras.models.load_model('urban_sound_model_1')
 
 d = {0: 'air_conditioner', 1: 'car_horn', 2: 'children_playing', 3: 'dog_bark', 4: 'drilling', 5: 'engine_idling', 6:'gun_shot', 7: 'jackhammer', 8: 'siren', 9: 'street_music'}
 
 def func(filename):
-    max_pad_len = 215
-    audio, sample_rate = librosa.load(filename) 
-    mfccs = librosa.feature.mfcc(y=audio, sr=sample_rate, n_mfcc=40)
-    pad_width = max_pad_len - mfccs.shape[1]
-    feat = np.pad(mfccs, pad_width=((0, 0), (0, pad_width)), mode='constant')
-    feat = feat.reshape(40, 1, 1)
-    batch_size=1 # example batch size
-    feat = np.reshape(feat, (batch_size,) + feat.shape)
-    pred = str(np.argmax(model.predict(feat)))
-    return class_map[pred]
+    audio, sample_rate = librosa.load(filename)
+    mfccs_features = librosa.feature.mfcc(y=audio, sr=sample_rate, n_mfcc=40)
+    mfccs_scaled_features = np.mean(mfccs_features.T,axis=0)
+    mfccs_scaled_features=mfccs_scaled_features.reshape(1,-1)
+    predicted_label=np.argmax(model.predict(mfccs_scaled_features),axis=1)
+    return d[predicted_label[0]]
 
 @app.route('/predict',methods=['POST'])
 def predict():
